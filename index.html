@@ -1,114 +1,71 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umar Lamiya | AI Architect & Agent Developer</title>
-    <meta name="description" content="Umar Lamiya - Architecting agentic systems, RAG pipelines, and autonomous AI solutions.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        :root { --primary: #6366f1; --secondary: #8b5cf6; --accent: #06b6d4; }
-        body { font-family: 'Inter', sans-serif; background: #0a0a0f; color: #e2e8f0; overflow-x: hidden; }
-        h1, h2, h3, h4, h5, h6 { font-family: 'Space Grotesk', sans-serif; }
-        .gradient-text { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .hero-gradient { background: radial-gradient(ellipse at top, #1e1b4b 0%, #0a0a0f 50%, #000000 100%); }
-        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .tech-badge { background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%); border: 1px solid rgba(99, 102, 241, 0.3); transition: all 0.3s ease; }
-        .project-card { background: linear-gradient(145deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.8) 100%); border: 1px solid rgba(148, 163, 184, 0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .project-card:hover { transform: translateY(-8px); border-color: rgba(99, 102, 241, 0.5); box-shadow: 0 20px 40px rgba(99, 102, 241, 0.1); }
-        .grid-pattern { background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0); background-size: 40px 40px; }
-        .animate-float { animation: float 6s ease-in-out infinite; }
-        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
-        .typing-cursor::after { content: '|'; animation: blink 1s infinite; }
-        @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
-        .scroll-reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
-        .scroll-reveal.active { opacity: 1; transform: translateY(0); }
-        .language-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 6px; }
-        .lang-typescript { background: #3178c6; } .lang-python { background: #3572A5; } .lang-rust { background: #dea584; }
-    </style>
+    <title>My Projects</title>
 </head>
-<body class="antialiased">
-    <nav class="fixed w-full z-50 top-0 transition-all duration-300" id="navbar">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <div class="flex-shrink-0 flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl">UL</div>
-                    <span class="font-bold text-xl tracking-tight text-white">Umar Lamiya</span>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">About</a>
-                    <a href="#projects" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Projects</a>
-                    <a href="#expertise" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Expertise</a>
-                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Contact</a>
-                </div>
-                <a href="https://github.com/umarlamiya" target="_blank" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 transition-all">
-                    <i data-lucide="github" class="w-4 h-4"></i><span>GitHub</span>
-                </a>
-            </div>
+<body>
+    <h1>Welcome to My Projects Page</h1>
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="project">
+            <h3>NSITF-RAG-AUTOMATION</h3>
+            <p>A project that automates the processes of the NSITF.</p>
+            <p>Tech Stack: Python, Django</p>
+            <a href="https://github.com/umarlamiya/NSITF-RAG-AUTOMATION">View on GitHub</a>
         </div>
-    </nav>
-
-    <section class="relative min-h-screen flex items-center justify-center hero-gradient grid-pattern pt-20 overflow-hidden">
-        <div class="absolute inset-0 overflow-hidden pointer-events-none">
-            <div class="absolute top-20 left-10 w-72 h-72 bg-indigo-600/20 rounded-full blur-3xl animate-float"></div>
-            <div class="absolute bottom-20 right-10 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl animate-float" style="animation-delay: 2s;"></div>
+        <div class="project">
+            <h3>medroute-core</h3>
+            <p>A core module for the MedRoute Application.</p>
+            <p>Tech Stack: Java, Spring Boot</p>
+            <a href="https://github.com/umarlamiya/medroute-core">View on GitHub</a>
         </div>
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8 scroll-reveal">
-                <span class="flex h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
-                <span class="text-sm text-gray-300">Available for collaboration</span>
-            </div>
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight scroll-reveal">
-                <span class="block text-white mb-2">Architecting</span>
-                <span class="gradient-text typing-cursor" id="typewriter">Agentic Systems</span>
-            </h1>
-            <p class="mt-6 text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed scroll-reveal">
-                Building autonomous AI agents, RAG pipelines, and intelligent automation systems.
-            </p>
-            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center scroll-reveal">
-                <a href="#projects" class="px-8 py-4 rounded-full bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition-all">View Projects</a>
-            </div>
+        <div class="project">
+            <h3>WiFi DensePose</h3>
+            <p>A project that explores human pose estimation in dense configurations.</p>
+            <p>Tech Stack: Python, TensorFlow</p>
+            <a href="https://github.com/umarlamiya/WiFi-DensePose">View on GitHub</a>
         </div>
-    </section>
-
-    <section id="projects" class="py-32 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-16 text-center text-white">Featured <span class="gradient-text">Projects</span></h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="project-card rounded-2xl p-6 scroll-reveal">
-                    <h3 class="text-xl font-bold text-white mb-2">medroute-core</h3>
-                    <p class="text-gray-400 text-sm mb-4">Agentic medical dispatching system using multi-agent orchestration.</p>
-                    <div class="flex items-center gap-2 text-sm text-gray-500"><span class="language-dot lang-python"></span> Python</div>
-                </div>
-            </div>
+        <div class="project">
+            <h3>AI-town-Lamiyas-wrld</h3>
+            <p>An AI-based project focused on smart city development.</p>
+            <p>Tech Stack: JavaScript, Node.js</p>
+            <a href="https://github.com/umarlamiya/AI-town-Lamiyas-wrld">View on GitHub</a>
         </div>
-    </section>
-
-    <footer class="py-12 border-t border-white/10 text-center">
-        <p class="text-gray-500">© 2026 Umar Lamiya. Built with AI.</p>
-    </footer>
-
-    <script>
-        lucide.createIcons();
-        const phrases = ["Agentic Systems", "RAG Pipelines", "Autonomous Bots"];
-        let i = 0, j = 0, current = [], deleting = false;
-        function loop() {
-            document.getElementById('typewriter').innerHTML = current.join('');
-            if (!deleting && j <= phrases[i].length) { current.push(phrases[i][j++]); }
-            else if (deleting && j >= 0) { current.pop(); j--; }
-            if (j == phrases[i].length) deleting = true;
-            if (deleting && j == 0) { deleting = false; i = (i + 1) % phrases.length; }
-            setTimeout(loop, deleting ? 100 : 200);
-        }
-        loop();
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
-        });
-        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
-    </script>
+        <div class="project">
+            <h3>bolt.diy</h3>
+            <p>A DIY project for building electronic components.</p>
+            <p>Tech Stack: HTML, CSS, JavaScript</p>
+            <a href="https://github.com/umarlamiya/bolt.diy">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Claude-Cowork</h3>
+            <p>A collaborative platform for teams to work together.</p>
+            <p>Tech Stack: React, Node.js</p>
+            <a href="https://github.com/umarlamiya/Claude-Cowork">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>QR-Code-Inventory-Management-System</h3>
+            <p>A system to manage inventory using QR codes.</p>
+            <p>Tech Stack: Python, Flask</p>
+            <a href="https://github.com/umarlamiya/QR-Code-Inventory-Management-System">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Kimi</h3>
+            <p>A personal assistant AI project.</p>
+            <p>Tech Stack: Ruby, Rails</p>
+            <a href="https://github.com/umarlamiya/Kimi">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Learn-Python-in-Less-than-10-Minutes</h3>
+            <p>A project aimed at teaching Python quickly.</p>
+            <p>Tech Stack: HTML, CSS, JavaScript</p>
+            <a href="https://github.com/umarlamiya/Learn-Python-in-Less-than-10-Minutes">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>CSS</h3>
+            <p>A repository focused on CSS best practices and examples.</p>
+            <p>Tech Stack: CSS</p>
+            <a href="https://github.com/umarlamiya/CSS">View on GitHub</a>
+        </div>
+    </div>
 </body>
 </html>
