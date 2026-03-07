@@ -1,2 +1,2 @@
 # umarlamiya.github.io
-My personal portfolio 
+My personal portfolio sample
